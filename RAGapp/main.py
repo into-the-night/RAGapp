@@ -14,7 +14,7 @@ GOOGLE_API_KEY = "YOUR_API_KEY"
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 ## load document
-documents = SimpleDirectoryReader(input_files=["final_data.csv"])
+documents = SimpleDirectoryReader("PATH_TO_DATA")
 documents = documents.load_data()
 
 ## create vectordb
